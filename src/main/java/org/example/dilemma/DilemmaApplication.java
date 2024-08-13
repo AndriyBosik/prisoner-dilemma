@@ -45,11 +45,11 @@ public class DilemmaApplication {
         System.out.println("|BENCHMARKING|");
         System.out.println("+------------+");
         System.out.printf("The fastest strategy combo's time is: %s ms%n", statistics.bestPerformance().milliseconds());
-        System.out.printf("First player uses: %s. And second payer uses: %s%n", statistics.bestPerformance().firstStrategy(), statistics.bestPerformance().secondStrategy());
+        System.out.printf("First player uses: %s. And second player uses: %s%n", statistics.bestPerformance().firstStrategy(), statistics.bestPerformance().secondStrategy());
 
         System.out.println(splitter);
 
         System.out.printf("The slowest strategy combo's time is: %s ms%n", statistics.worstPerformance().milliseconds());
-        System.out.printf("First player uses: %s. And second payer uses: %s%n", statistics.worstPerformance().firstStrategy(), statistics.worstPerformance().secondStrategy());
+        System.out.printf("First player uses: %s. And second player uses: %s%n", statistics.worstPerformance().firstStrategy(), statistics.worstPerformance().secondStrategy());
     }
 }

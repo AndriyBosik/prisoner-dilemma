@@ -55,4 +55,4 @@ Based on the output example provided above, the fastest strategies pair is when 
 But it's not the real truth. If you try to run the application multiple times, you'll see that the faster strategies pair might be different on every execution, but it never includes **RANDOM** strategy.
 The reason for that is that **TIP_FOR_TAT**, **COOPERATE**, **DEFECT** and **GRIM_TRIGGER** strategies does not consume much CPU resources, and it takes less CPU resources to handle one of those strategies.
 On the other hand, **RANDOM** strategy requires generating new boolean value on every move that consumes more memory and CPU resources.
-We can also see that **RANDOM** & **RANDOM** strategy pair is almost 240 times slower that the fastest strategy pair (**COOPERATE** & **COOPERATE**);
+We can also see that **RANDOM** & **RANDOM** strategy pair is almost 200 times slower that the fastest strategy pair (**COOPERATE** & **COOPERATE**);
