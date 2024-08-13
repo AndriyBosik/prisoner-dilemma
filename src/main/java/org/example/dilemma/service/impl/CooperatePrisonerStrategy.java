@@ -1,12 +1,12 @@
-package org.example.dilemma.sevice.impl;
+package org.example.dilemma.service.impl;
 
 import org.example.dilemma.metadata.PrisonerDecisionType;
-import org.example.dilemma.sevice.PrisonerStrategy;
+import org.example.dilemma.service.PrisonerStrategy;
 
-public class BetrayPrisonerStrategy implements PrisonerStrategy {
+public class CooperatePrisonerStrategy implements PrisonerStrategy {
     @Override
     public PrisonerDecisionType decide() {
-        return PrisonerDecisionType.BETRAY;
+        return PrisonerDecisionType.STAY_SILENT;
     }
 
     @Override

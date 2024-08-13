@@ -1,8 +1,8 @@
-package org.example.dilemma.sevice.impl;
+package org.example.dilemma.service.impl;
 
 import org.example.dilemma.metadata.PrisonerStrategyType;
-import org.example.dilemma.sevice.PrisonerStrategy;
-import org.example.dilemma.sevice.PrisonerStrategyFactory;
+import org.example.dilemma.service.PrisonerStrategy;
+import org.example.dilemma.service.PrisonerStrategyFactory;
 
 public class PrisonerStrategyFactoryImpl implements PrisonerStrategyFactory {
     @Override

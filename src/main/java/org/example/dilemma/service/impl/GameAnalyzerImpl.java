@@ -1,14 +1,14 @@
-package org.example.dilemma.sevice.impl;
+package org.example.dilemma.service.impl;
 
 import org.example.dilemma.metadata.PrisonerStrategyType;
 import org.example.dilemma.model.GameFinalResult;
 import org.example.dilemma.model.GamePerformance;
 import org.example.dilemma.model.GameStatistics;
 import org.example.dilemma.model.Payoff;
-import org.example.dilemma.sevice.Game;
-import org.example.dilemma.sevice.GameAnalyzer;
-import org.example.dilemma.sevice.PrisonerStrategy;
-import org.example.dilemma.sevice.PrisonerStrategyFactory;
+import org.example.dilemma.service.Game;
+import org.example.dilemma.service.GameAnalyzer;
+import org.example.dilemma.service.PrisonerStrategy;
+import org.example.dilemma.service.PrisonerStrategyFactory;
 
 import java.util.function.Supplier;
 

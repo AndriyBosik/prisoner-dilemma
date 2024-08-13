@@ -1,10 +1,10 @@
 package org.example.dilemma;
 
 import org.example.dilemma.model.GameStatistics;
-import org.example.dilemma.sevice.GameAnalyzer;
-import org.example.dilemma.sevice.impl.GameAnalyzerImpl;
-import org.example.dilemma.sevice.impl.GameImpl;
-import org.example.dilemma.sevice.impl.PrisonerStrategyFactoryImpl;
+import org.example.dilemma.service.GameAnalyzer;
+import org.example.dilemma.service.impl.GameAnalyzerImpl;
+import org.example.dilemma.service.impl.GameImpl;
+import org.example.dilemma.service.impl.PrisonerStrategyFactoryImpl;
 
 public class DilemmaApplication {
     private final static int ROUNDS = 1_000_000;

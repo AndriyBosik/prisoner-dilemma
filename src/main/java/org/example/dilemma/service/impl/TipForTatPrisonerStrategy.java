@@ -1,7 +1,7 @@
-package org.example.dilemma.sevice.impl;
+package org.example.dilemma.service.impl;
 
 import org.example.dilemma.metadata.PrisonerDecisionType;
-import org.example.dilemma.sevice.PrisonerStrategy;
+import org.example.dilemma.service.PrisonerStrategy;
 
 public class TipForTatPrisonerStrategy implements PrisonerStrategy {
     private PrisonerDecisionType lastOpponentDecision = null;

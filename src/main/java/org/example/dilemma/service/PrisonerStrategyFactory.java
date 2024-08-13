@@ -1,4 +1,4 @@
-package org.example.dilemma.sevice;
+package org.example.dilemma.service;
 
 import org.example.dilemma.metadata.PrisonerStrategyType;
 

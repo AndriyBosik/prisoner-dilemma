@@ -1,11 +1,11 @@
-package org.example.dilemma.sevice.impl;
+package org.example.dilemma.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.example.dilemma.exception.UnknownPayoffException;
 import org.example.dilemma.metadata.PrisonerDecisionType;
 import org.example.dilemma.model.Payoff;
-import org.example.dilemma.sevice.Game;
-import org.example.dilemma.sevice.PrisonerStrategy;
+import org.example.dilemma.service.Game;
+import org.example.dilemma.service.PrisonerStrategy;
 
 @RequiredArgsConstructor
 public class GameImpl implements Game {
