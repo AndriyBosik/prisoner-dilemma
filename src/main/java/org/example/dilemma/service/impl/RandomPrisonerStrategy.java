@@ -7,11 +7,11 @@ import java.security.SecureRandom;
 import java.util.Random;
 
 public class RandomPrisonerStrategy implements PrisonerStrategy {
-    private final Random random = new SecureRandom();
+    private final static Random RANDOM = new SecureRandom();
 
     @Override
     public PrisonerDecisionType decide() {
-        boolean staySilent = random.nextBoolean();
+        boolean staySilent = RANDOM.nextBoolean();
         return staySilent ? PrisonerDecisionType.STAY_SILENT : PrisonerDecisionType.BETRAY;
     }
 
