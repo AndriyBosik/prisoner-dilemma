@@ -9,6 +9,11 @@ import org.example.dilemma.service.PrisonerStrategy;
 
 @RequiredArgsConstructor
 public class GameImpl implements Game {
+    private final static Payoff COOPERATION_PAYOFF = new Payoff(1, 1);
+    private final static Payoff BETRAYAL_PAYOFF = new Payoff(2, 2);
+    private final static Payoff FIRST_PLAYER_PAYOFF = new Payoff(0, 3);
+    private final static Payoff SECOND_PLAYER_PAYOFF = new Payoff(3, 0);
+
     private final int rounds;
 
     @Override
@@ -33,13 +38,13 @@ public class GameImpl implements Game {
 
     private Payoff getPayoff(PrisonerDecisionType firstDecision, PrisonerDecisionType secondDecision) {
         if (firstDecision == PrisonerDecisionType.STAY_SILENT && secondDecision == PrisonerDecisionType.STAY_SILENT) {
-            return new Payoff(1, 1);
+            return COOPERATION_PAYOFF;
         } else if (firstDecision == PrisonerDecisionType.BETRAY && secondDecision == PrisonerDecisionType.BETRAY) {
-            return new Payoff(2, 2);
+            return BETRAYAL_PAYOFF;
         } else if (firstDecision == PrisonerDecisionType.STAY_SILENT && secondDecision == PrisonerDecisionType.BETRAY) {
-            return new Payoff(3, 0);
+            return SECOND_PLAYER_PAYOFF;
         } else if (firstDecision == PrisonerDecisionType.BETRAY && secondDecision == PrisonerDecisionType.STAY_SILENT) {
-            return new Payoff(0, 3);
+            return FIRST_PLAYER_PAYOFF;
         }
         throw new UnknownPayoffException(
                 String.format(
